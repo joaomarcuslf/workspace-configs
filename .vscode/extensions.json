@@ -1,0 +1,25 @@
+{
+    "recommendations": [
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "aaron-bond.better-comments",
+        "wmaurer.change-case",
+        "naumovs.color-highlight",
+        "mrmlnc.vscode-duplicate",
+        "editorconfig.editorconfig",
+        "sleistner.vscode-fileutils",
+        "eamodio.find-related",
+        "waderyan.gitblame",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "cschleiden.vscode-github-actions",
+        "github.codespaces",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "vincaslt.highlight-matching-tag",
+        "ionutvmi.path-autocomplete",
+        "christian-kohler.path-intellisense",
+        "earshinov.permute-lines",
+        "britesnow.vscode-toggle-quotes"
+    ]
+}

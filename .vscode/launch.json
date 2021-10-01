@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Program (Python)",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "args": [
+          "run",
+          "--no-debugger",
+          "--no-reload"
+      ],
+      "jinja": true,
+      "envFile": "${workspaceFolder}/.env",
+    },
+    {
+      "name": "Launch Program (Rails)",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": ["server"],
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Launch Program (Node.js)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "start"],
+      "envFile": "${workspaceFolder}/.env",
+    },
+    {
+      "name": "Launch Package (Go)",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+    }
+  ]
+}

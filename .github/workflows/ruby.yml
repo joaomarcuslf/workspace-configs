@@ -1,0 +1,43 @@
+name: ruby
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - develop
+  pull_request:
+    branches:
+      - main
+      - master
+      - develop
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup Ruby env 🏗
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+
+      - name: Install dependencies 👨🏻‍💻
+        run: |
+          gem install bundler
+          bundle install
+
+      # - name: Run build 👀
+      #   run: |
+      #     make build
+
+      - name: Run tests 🧪
+        run: |
+          bundle exec rspec
